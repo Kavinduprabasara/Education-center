@@ -1,0 +1,115 @@
+.login{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    background: linear-gradient(10deg, #7e798a 8%, rgba(30, 1, 30, 0.648) 100%);
+    width:100%;
+    height: 100%;
+    border-radius: 2vh;
+}
+
+.login-input{
+    margin-left: 5vh;
+}
+
+body{
+    display: flex;
+    font-family: Jetbrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 97vh;
+    background-image: url(free-vector.webp);
+    margin-right: 30vw;
+}
+a{
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    background-size: contain;
+    padding:1vw 10vw 1vw 1vw;
+    transition: 0.2s linear;
+}
+
+a:hover{
+    background-color: #e9e8ea;
+    border-radius: 2vh;
+    color: black;
+    background-size: contain;
+}
+.reg-form>li{
+    list-style:none;
+    padding: 0.5vh;
+}
+
+
+/* 
+.navbar{
+    position: fixed;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 3px 4px;
+
+} */
+
+.navbar-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: right; 
+    border-radius: 1vw;
+    /* padding-top: 4vh; */
+    margin: 0.2vw;
+    color: #000000;
+    background-color: #620BD1;
+    height: 100%;
+    width:20vw;
+    left: 0;
+    padding: 0vh;
+}
+.navbar-items>li{
+    list-style: none;
+    padding: 2vh;
+}
+
+.input-field{
+    /* margin-top: 2vh; */
+    background-color: transparent;
+    border: 0px solid;
+    border-bottom: 1px solid #000000;
+    height: 3vh;    
+    width: 25vw;
+    color: #020000;
+}
+.form{
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.4) -121.71%, rgba(217, 217, 217, 0) 102.74%);
+    backdrop-filter: blur(20px);
+    font-family: Jetbrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    width: 30vw;
+}
+
+#check{
+    width: 5vh;
+}
+
+#submit-btn{
+    margin: 0vh 0 0 38vh;
+    background: none;
+	border: 1px solid rgb(236, 236, 236);
+	cursor: pointer;
+	outline: inherit;
+    color: rgb(255, 255, 255);
+    font-size:1.6vh;
+    border-radius: 4vh;
+    padding: 0px;
+    background-blend-mode: hue;
+    filter: blur(0.2px);
+    box-shadow: 1px 1px 3px 2px rgb(0, 0, 0);
+    width:6vw;
+    height: 4vh;
+    transition: 0.2s ease-in-out;
+}
+#submit-btn:hover{
+    background-color: #620BD1;
+    color: white;
+}   

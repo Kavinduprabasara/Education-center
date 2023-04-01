@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" type="text/css"/>
+    <script src="login.js"></script>
+</head>
+<body>
+
+    <ul class ="navbar-items">
+        <li class="nav-item"><a href="index.html">Home&#8250</a></li>
+        <li class="nav-item"><a href="login.html">Login&#8250</a></li>
+        <li class="nav-item"><a href="registration.html" style="padding:1vw 8vw 1vw 1vw;">Registration&#8250</a></li>
+        <li class="nav-item"><a href="aboutme.html">About us&#8250</a></li>
+        <li class="nav-item"><a href="contact.html">Contact&#8250</a></li>
+    </ul>
+    
+
+    <form name="form" action="#" onSubmit="return required();" class="login">
+        <h1 class="login-title">Login</h1>
+
+        <input type="text"  class="login-input" name="login" placeholder="Name"  id="login"/>
+        <span class="login-input" id="required-one" style="border: none;"></span>
+        <br />
+        <br />
+
+        <input type="text"  class="login-input" name="pass" placeholder="Password" id = "pass"/>
+        <span class="login-input" style="border: none;" id="required-two"></span>
+        <br/>
+        <br/>
+        <input  class="login-input" type="submit" name="submit" value="Submit" id="submit-btn"/>
+    </form>
+</html>
