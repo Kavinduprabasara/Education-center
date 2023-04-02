@@ -1,6 +1,63 @@
 body{
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    display: flex;
+    font-family: Jetbrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 115vh;
     background-image: url(free-vector.webp);
+
+    margin-right: 9vw;
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    background-size: contain;
+    padding:1vw 10vw 1vw 1vw;
+    transition: 0.2s linear;
+}
+
+a:hover{
+    background-color: #e9e8ea;
+    border-radius: 2vh;
+    color: black;
+    background-size: contain;
+}
+
+.navbar{
+    position: fixed;
+    top:0;
+    display: flex;
+    flex-direction: row;
+
+}
+.navbar-items{
+    margin-top: 0;
+    margin-left: 1vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: right; 
+    border-radius: 1vw;
+    /* padding-top: 4vh; */
+    /* margin: 0.2vw; */
+    color: #000000;
+    background-color: rgb(98, 11, 209,0.5);
+    height: 100%;
+    width:20vw;
+    left: 0;
+    padding: 0vh;
+}
+.navbar-items>li{
+    list-style: none;
+    padding: 2vh;
+}
+
+.content{
+    /* padding-top: 20vh; */
+    padding-left: 20vw;
 }
