@@ -17,7 +17,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 97vh;
-    background-image: url(free-vector.webp);
+    background-image: url(reg-back.webp);
     margin-right: 30vw;
 }
 a{
@@ -54,6 +54,7 @@ a:hover{
 } */
 
 .navbar-items{
+    
     display: flex;
     flex-direction: column;
     justify-content: right; 
@@ -61,7 +62,7 @@ a:hover{
     /* padding-top: 4vh; */
     margin: 0.2vw;
     color: #000000;
-    background-color: #620BD1;
+    background-color: rgb(98, 11, 209,0.5);
     height: 100%;
     width:20vw;
     left: 0;

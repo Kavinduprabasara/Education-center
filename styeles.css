@@ -4,8 +4,7 @@ body{
     justify-content: space-evenly;
     height: 97vh;
 
-    backdrop-filter: blur(20px);
-    background-color: rgb(27, 31, 35);
+    background-image: url(reg-back.webp);
     /* Note: backdrop-filter has minimal browser support */
     margin-left:10vw ;
     font-family: Jetbrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
@@ -16,7 +15,7 @@ body{
 a{
     text-decoration: none;
     font-size: 3vw;
-    color: rgb(255, 255, 255);
+    color: rgb(20, 8, 8);
     padding-left: 0;
     transition: 0.5s ease-in-out;
 
@@ -41,12 +40,11 @@ li{
 .front-image{
     /* height: 100vh; */
     overflow-y:hidden ;
-    border-radius: 0.1vw;
-    filter: grayscale(0.8);
-    box-shadow: 4px 5px 9px 1px;
+    border-radius: 0.4vw;
+    /* filter: grayscale(0.8); */
 }
 .introduction{
-    color: rgb(255, 255, 255);
+    color: rgb(15, 1, 1);
 }
 
 
