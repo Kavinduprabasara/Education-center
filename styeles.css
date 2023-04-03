@@ -15,7 +15,7 @@ body{
 a{
     text-decoration: none;
     font-size: 3vw;
-    color: rgb(20, 8, 8);
+    color: #55304e;
     padding-left: 0;
     transition: 0.5s ease-in-out;
 
@@ -40,11 +40,11 @@ li{
 .front-image{
     /* height: 100vh; */
     overflow-y:hidden ;
-    border-radius: 0.4vw;
+    border-radius: 200vw;
     /* filter: grayscale(0.8); */
 }
 .introduction{
-    color: rgb(15, 1, 1);
+    color: rgb(255, 250, 250);
 }
 
 

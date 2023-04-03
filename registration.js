@@ -13,9 +13,6 @@ function userid_validation(uid, mx, my) {
 function passid_validation(passid, mx, my) {
   var passid_len = passid.value.length;
   if (passid_len == 0 || passid_len >= my || passid_len < mx) {
-      // alert(
-      //   "Password should not be empty / length be between " + mx + " to " + my
-      // );
     document.getElementById("msg-two").innerHTML ="Fill this";
     passid.focus();
     return false;
@@ -98,10 +95,6 @@ function validsex(umsex) {
     return true;
   }
 }
-
-
-
-
 
 function formValidation() {
     var uid = document.registration.userid;
