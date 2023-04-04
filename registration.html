@@ -19,7 +19,7 @@
 </ul>
     
     
-        <form name="registration" onSubmit="return formValidation();" class = "form">
+        <form name="registration" onSubmit='return formValidation();' class = "form">
             <ul class="reg-form">
               <li><label for="userid">User id:</label></li>
               <li><input class="input-field" type="text" name="userid" size="12" /><span id = "msg-one"></span></li>
@@ -32,8 +32,8 @@
               <li><label for="country">Country:</label></li>
               <li>
                 <select name="country" class="input-field">
-                  <option selected="" value="Default">
-                    Select a country
+                  <option selected="" value="Select">
+                    Select
                   </option>
                   <option value="AF">Sri Lanka</option>
                   <option value="AF">India</option>
@@ -49,8 +49,8 @@
               <li><label for="zip">ZIP Code:</label></li>
               <li><input class="input-field" type="text" name="zip" /><span id = "msg-zip"></span></li>
               <li><label for="email">Email:</label></li>
-              <li><input class="input-field" type="text" name="email" size="50" /><span id = "msg-mail"></span></li>
-              <li><label id="gender">Sex:</label></li><span id = "msg-sex"></span></li>
+              <li id="#7"><input class="input-field" type="text" name="email" size="50" id="email"/><span id = "msg-mail"></span></li>
+              <li><label id="gender">Sex:</label><span id="msg-sex"></span></li>
               <li>
                 <input class="input-field" type="radio" name="msex" value="Male" id ="check" /><span>Male</span>
               </li>
@@ -59,7 +59,7 @@
               </li>
               <li><label>Language:</label></li>
               <li>
-                <input class="input-field" type="checkbox" name="en" value="en" checked id ="check"/>
+                <input class="input-field" type="checkbox" name="en" value="en" id ="check"/>
                 <span>English</span>
               </li>
               <li>
@@ -67,8 +67,9 @@
                 <span>Non English</span>
               </li>
               <div class="msg-lang"></div>
-              <li><label for="desc">About:</label></li>
+              <li><label for="desc">About:</label><span id="msg-submit"></span></li>
               <li><textarea name="desc" id="desc"></textarea></li>
+              <span id="msg-submit"></span>
               <li><input  type="submit" name="submit" value="Submit" id="submit-btn" /></li>
             </ul>
           </form>
