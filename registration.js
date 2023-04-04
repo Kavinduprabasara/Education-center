@@ -3,7 +3,7 @@
 function userid_validation(uid, mx, my) {
   var uid_len = uid.value.length;
   if (uid_len == 0 || uid_len >= my || uid_len < mx) {
-    document.getElementById("msg-one").innerHTML ="Fill this";
+    document.getElementById("msg-one").innerHTML ="Requires must be filled";
     
     uid.focus();
     return false;
@@ -13,7 +13,7 @@ function userid_validation(uid, mx, my) {
 function passid_validation(passid, mx, my) {
   var passid_len = passid.value.length;
   if (passid_len == 0 || passid_len >= my || passid_len < mx) {
-    document.getElementById("msg-two").innerHTML ="Fill this";
+    document.getElementById("msg-two").innerHTML ="Requires must be filled";
     passid.focus();
     return false;
   }
@@ -42,14 +42,14 @@ function alphanumeric(uadd) {
   if (uadd.value.match(letters) || uadd.value.length!=0) {
     return true;
   } else {
-    alert("User address must have alphanumeric characters only");
+    document.getElementById("msg-add").innerHTML ="Username Can't be empty";
     uadd.focus();
     return false;
   }
 }
 function countryselect(ucountry) {
   if (ucountry.value == "Default") {
-    alert("Select your country from the list");
+    document.getElementById("msg-country").innerHTML ="Select a country";
     ucountry.focus();
     return false;
   } else {
@@ -61,7 +61,7 @@ function allnumeric(uzip) {
   if (uzip.value.match(numbers)) {
     return true;
   } else {
-    alert("ZIP code must have numeric characters only");
+    document.getElementById("msg-zip").innerHTML ="Required";
     uzip.focus();
     return false;
   }
@@ -71,7 +71,7 @@ function ValidateEmail(uemail) {
   if (uemail.value.match(mailformat)) {
     return true;
   } else {
-    alert("You have entered an invalid email address!");
+    document.getElementById("msg-email").innerHTML ="Email cannot be";
     return false;
   }
 }
@@ -86,7 +86,7 @@ function validsex(umsex) {
   }
 
   if (x == 0) {
-    alert("Select Male/Female");
+    document.getElementById("msg-sex").innerHTML ="Select a Gender";
     //umsex.focus();
     return false;
   } else {
@@ -108,7 +108,6 @@ function formValidation() {
     //var ufsex = document.registration.fsex;
 
     if (userid_validation(uid, 5, 12)) {
-      
       if (passid_validation(passid, 7, 12) ) {
         if (allLetter(uname) ) {
           if (alphanumeric(uadd) ) {
